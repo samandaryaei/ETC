@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\ETC.PoliceInquery.props" />
+</Project>
