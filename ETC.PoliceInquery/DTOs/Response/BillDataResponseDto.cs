@@ -1,11 +1,8 @@
-﻿namespace ETC.PoliceInquery.DTOs.Request
+﻿using ETC.PoliceInquery.DTOs.Response;
+
+namespace ETC.PoliceInquery.DTOs.Request
 {
-    public class BillDataResponseDto
+    public class BillDataResponseDto : BaseResponseDto
     {
-        public string TrackingCode { get; set; }
-        public string VehicleClass { get; set; }
-        public int ErrorCode { get; set; }
-        public string ErrorDesc { get; set; }
-        public string SignData { get; set; }
     }
 }

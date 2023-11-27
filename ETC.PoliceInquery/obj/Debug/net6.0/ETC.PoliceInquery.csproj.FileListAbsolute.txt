@@ -5,7 +5,12 @@ D:\Projects\ETC\ETC.PoliceInquery\ETC.PoliceInquery\bin\Debug\net6.0\ETC.PoliceI
 D:\Projects\ETC\ETC.PoliceInquery\ETC.PoliceInquery\bin\Debug\net6.0\ETC.PoliceInquery.runtimeconfig.json
 D:\Projects\ETC\ETC.PoliceInquery\ETC.PoliceInquery\bin\Debug\net6.0\ETC.PoliceInquery.dll
 D:\Projects\ETC\ETC.PoliceInquery\ETC.PoliceInquery\bin\Debug\net6.0\ETC.PoliceInquery.pdb
+D:\Projects\ETC\ETC.PoliceInquery\ETC.PoliceInquery\bin\Debug\net6.0\Microsoft.Bcl.AsyncInterfaces.dll
+D:\Projects\ETC\ETC.PoliceInquery\ETC.PoliceInquery\bin\Debug\net6.0\Microsoft.Bcl.TimeProvider.dll
 D:\Projects\ETC\ETC.PoliceInquery\ETC.PoliceInquery\bin\Debug\net6.0\Microsoft.OpenApi.dll
+D:\Projects\ETC\ETC.PoliceInquery\ETC.PoliceInquery\bin\Debug\net6.0\Newtonsoft.Json.dll
+D:\Projects\ETC\ETC.PoliceInquery\ETC.PoliceInquery\bin\Debug\net6.0\Polly.dll
+D:\Projects\ETC\ETC.PoliceInquery\ETC.PoliceInquery\bin\Debug\net6.0\Polly.Core.dll
 D:\Projects\ETC\ETC.PoliceInquery\ETC.PoliceInquery\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
 D:\Projects\ETC\ETC.PoliceInquery\ETC.PoliceInquery\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 D:\Projects\ETC\ETC.PoliceInquery\ETC.PoliceInquery\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll

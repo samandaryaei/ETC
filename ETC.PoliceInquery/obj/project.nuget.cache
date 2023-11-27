@@ -1,11 +1,16 @@
 {
   "version": 2,
-  "dgSpecHash": "sBjumG3Q52r78IfZtmDhiL3b+EALtRa9SjR2mNGqy0Owd1YzWPKjChRKHt9l1JBaFaioK3zf0dA/l3EWF60hrg==",
+  "dgSpecHash": "iWWMKkpW16OO67CE7V+XtBQvD7DHqGfzmpfA4dR0b/nHnqmKxWfhbpo+xB0QZ9AUlI8yzHigWhJvs13rntDslQ==",
   "success": true,
   "projectFilePath": "D:\\Projects\\ETC\\ETC.PoliceInquery\\ETC.PoliceInquery\\ETC.PoliceInquery.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\s.daryaei\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\6.0.0\\microsoft.bcl.asyncinterfaces.6.0.0.nupkg.sha512",
+    "C:\\Users\\s.daryaei\\.nuget\\packages\\microsoft.bcl.timeprovider\\8.0.0\\microsoft.bcl.timeprovider.8.0.0.nupkg.sha512",
     "C:\\Users\\s.daryaei\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
     "C:\\Users\\s.daryaei\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\s.daryaei\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
+    "C:\\Users\\s.daryaei\\.nuget\\packages\\polly\\8.2.0\\polly.8.2.0.nupkg.sha512",
+    "C:\\Users\\s.daryaei\\.nuget\\packages\\polly.core\\8.2.0\\polly.core.8.2.0.nupkg.sha512",
     "C:\\Users\\s.daryaei\\.nuget\\packages\\swashbuckle.aspnetcore\\6.5.0\\swashbuckle.aspnetcore.6.5.0.nupkg.sha512",
     "C:\\Users\\s.daryaei\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.5.0\\swashbuckle.aspnetcore.swagger.6.5.0.nupkg.sha512",
     "C:\\Users\\s.daryaei\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.5.0\\swashbuckle.aspnetcore.swaggergen.6.5.0.nupkg.sha512",
