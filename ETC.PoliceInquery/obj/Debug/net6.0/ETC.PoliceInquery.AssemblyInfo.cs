@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ETC.PoliceInquery")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0f1cd9b7e261327b0a3ae1e846ba5291f6237f8e")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+976b7bca83531e45f1fd923065fe7ba794037c87")]
 [assembly: System.Reflection.AssemblyProductAttribute("ETC.PoliceInquery")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ETC.PoliceInquery")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

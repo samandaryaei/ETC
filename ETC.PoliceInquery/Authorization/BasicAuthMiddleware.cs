@@ -23,14 +23,9 @@ public class BasicAuthMiddleware
             var username = credentials[0];
             var password = credentials[1];
 
-            // authenticate credentials with user service and attach user to http context
             context.Items["User"] = await userService.Authenticate(username, password);
         }
-        catch
-        {
-            // do nothing if invalid auth header
-            // user is not attached to context so request won't have access to secure routes
-        }
+        catch { }
 
         await _next(context);
     }
