@@ -1,12 +1,14 @@
+﻿using ETC.PoliceInquery.Authorization;
 using ETC.PoliceInquery.HttpClient;
+using ETC.PoliceInquery.Services;
 using ETC.PoliceInquery.Shared;
 using Microsoft.OpenApi.Models;
 
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllers();
-
 builder.Services.AddEndpointsApiExplorer();
+
 builder.Services.AddSwaggerGen(c =>
 {
     c.SwaggerDoc("v1", new OpenApiInfo { Title = "PoliceInquery", Version = "v1" });
@@ -21,6 +23,8 @@ builder.Services.AddHttpClient("ETC", client =>
 
 builder.Services.AddSingleton<IHttpClientHelperAsync,HttpClientHelperAsync>();
 
+builder.Services.AddScoped<IUserService, UserService>();
+
 var app = builder.Build();
 
 if (app.Environment.IsDevelopment())
@@ -33,11 +37,21 @@ app.UseExceptionHandler("/error");
 
 app.UseHttpsRedirection();
 
-app.UseAuthorization();
+//TODO بعدا آدرس دقیق کلاینت در کورس مشخص شود
+app.UseCors(x => x
+       .AllowAnyOrigin()
+       .AllowAnyMethod()
+       .AllowAnyHeader());
+
+app.UseMiddleware<BasicAuthMiddleware>();
+
+//app.UseAuthorization();
 
 app.MapControllers();
 
 app.Run();
+
+
 
 
 //static IAsyncPolicy<HttpResponseMessage> GetRetryPolicy()

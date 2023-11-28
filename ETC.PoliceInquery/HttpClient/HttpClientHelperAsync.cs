@@ -1,5 +1,5 @@
-﻿using ETC.PoliceInquery.DTOs.Request;
-using ETC.PoliceInquery.DTOs.Response;
+﻿using ETC.PoliceInquery.Models.DTOs.Request;
+using ETC.PoliceInquery.Models.DTOs.Response;
 using Microsoft.AspNetCore.WebUtilities;
 using Newtonsoft.Json;
 using System.Net;

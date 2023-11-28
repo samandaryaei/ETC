@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace ETC.PoliceInquery.DTOs.Request
+namespace ETC.PoliceInquery.Models.DTOs.Request
 {
     /// <summary>
     /// 
@@ -22,8 +22,8 @@ namespace ETC.PoliceInquery.DTOs.Request
         [Required]
         public override string SignData
         {
-            get => string.IsNullOrEmpty(SignData) ? 
-                base.GenSign($"{TrackingCode}{TrafficUId}{EventId}{BillNumber}{BillPrice}{BillDateTime}") : 
+            get => string.IsNullOrEmpty(SignData) ?
+                GenSign($"{TrackingCode}{TrafficUId}{EventId}{BillNumber}{BillPrice}{BillDateTime}") :
                 SignData;
         }
     }

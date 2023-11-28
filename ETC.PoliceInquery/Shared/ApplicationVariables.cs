@@ -1,6 +1,6 @@
 ﻿namespace ETC.PoliceInquery.Shared
 {
-    public static class Shared
+    public static class ApplicationVariables
     {
         public static Dictionary<string, string> PlateNumberLetterCode = new()
         {
@@ -79,5 +79,6 @@
             new CarClassMapping("13","B","کار","تاکسی")
         };
 
+        public static readonly byte[] _salt = new byte[32]; //TODO مقدار را باید از پلیس گرفت
     }
 }

@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace ETC.PoliceInquery.DTOs.Request
+namespace ETC.PoliceInquery.Models.DTOs.Request
 {
     public class SendPenaltyRequestDto : BaseRequestDto
     {

@@ -1,7 +1,7 @@
 ﻿using ETC.PoliceInquery.Shared;
 using System.ComponentModel.DataAnnotations;
 
-namespace ETC.PoliceInquery.DTOs.Request
+namespace ETC.PoliceInquery.Models.DTOs.Request
 {
     public class SendPicRequestDto : BaseRequestDto
     {
@@ -17,7 +17,7 @@ namespace ETC.PoliceInquery.DTOs.Request
         public override string SignData
         {
             get => string.IsNullOrEmpty(SignData) ?
-              base.GenSign($"{TrackingCode}{TrafficUId}") :
+              GenSign($"{TrackingCode}{TrafficUId}") :
               SignData;
         }
     }

@@ -91,6 +91,7 @@ D:\Projects\ETC\ETC.PoliceInquery\ETC.PoliceInquery.Test\obj\Debug\net6.0\ETC.Po
 D:\Projects\ETC\ETC.PoliceInquery\ETC.PoliceInquery.Test\obj\Debug\net6.0\ETC.PoliceInquery.Test.AssemblyInfoInputs.cache
 D:\Projects\ETC\ETC.PoliceInquery\ETC.PoliceInquery.Test\obj\Debug\net6.0\ETC.PoliceInquery.Test.AssemblyInfo.cs
 D:\Projects\ETC\ETC.PoliceInquery\ETC.PoliceInquery.Test\obj\Debug\net6.0\ETC.PoliceInquery.Test.csproj.CoreCompileInputs.cache
+D:\Projects\ETC\ETC.PoliceInquery\ETC.PoliceInquery.Test\obj\Debug\net6.0\ETC.PoliceInquery.Test.sourcelink.json
 D:\Projects\ETC\ETC.PoliceInquery\ETC.PoliceInquery.Test\obj\Debug\net6.0\ETC.PoliceInquery.Test.csproj.CopyComplete
 D:\Projects\ETC\ETC.PoliceInquery\ETC.PoliceInquery.Test\obj\Debug\net6.0\ETC.PoliceInquery.Test.dll
 D:\Projects\ETC\ETC.PoliceInquery\ETC.PoliceInquery.Test\obj\Debug\net6.0\refint\ETC.PoliceInquery.Test.dll

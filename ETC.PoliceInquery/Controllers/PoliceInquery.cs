@@ -1,9 +1,8 @@
-﻿using ETC.PoliceInquery.DTOs.Request;
-using ETC.PoliceInquery.DTOs.Response;
-using ETC.PoliceInquery.HttpClient;
+﻿using ETC.PoliceInquery.HttpClient;
+using ETC.PoliceInquery.Models.DTOs.Request;
+using ETC.PoliceInquery.Models.DTOs.Response;
 using ETC.PoliceInquery.Shared;
 using Microsoft.AspNetCore.Mvc;
-using Newtonsoft.Json;
 using System.Net;
 
 namespace ETC.PoliceInquery.Controllers

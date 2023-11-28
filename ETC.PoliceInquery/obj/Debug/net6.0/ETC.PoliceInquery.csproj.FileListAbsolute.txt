@@ -21,13 +21,14 @@ D:\Projects\ETC\ETC.PoliceInquery\ETC.PoliceInquery\obj\Debug\net6.0\ETC.PoliceI
 D:\Projects\ETC\ETC.PoliceInquery\ETC.PoliceInquery\obj\Debug\net6.0\ETC.PoliceInquery.csproj.CoreCompileInputs.cache
 D:\Projects\ETC\ETC.PoliceInquery\ETC.PoliceInquery\obj\Debug\net6.0\ETC.PoliceInquery.MvcApplicationPartsAssemblyInfo.cs
 D:\Projects\ETC\ETC.PoliceInquery\ETC.PoliceInquery\obj\Debug\net6.0\ETC.PoliceInquery.MvcApplicationPartsAssemblyInfo.cache
+D:\Projects\ETC\ETC.PoliceInquery\ETC.PoliceInquery\obj\Debug\net6.0\ETC.PoliceInquery.sourcelink.json
+D:\Projects\ETC\ETC.PoliceInquery\ETC.PoliceInquery\obj\Debug\net6.0\staticwebassets.build.json
+D:\Projects\ETC\ETC.PoliceInquery\ETC.PoliceInquery\obj\Debug\net6.0\staticwebassets.development.json
 D:\Projects\ETC\ETC.PoliceInquery\ETC.PoliceInquery\obj\Debug\net6.0\staticwebassets\msbuild.ETC.PoliceInquery.Microsoft.AspNetCore.StaticWebAssets.props
 D:\Projects\ETC\ETC.PoliceInquery\ETC.PoliceInquery\obj\Debug\net6.0\staticwebassets\msbuild.build.ETC.PoliceInquery.props
 D:\Projects\ETC\ETC.PoliceInquery\ETC.PoliceInquery\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.ETC.PoliceInquery.props
 D:\Projects\ETC\ETC.PoliceInquery\ETC.PoliceInquery\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.ETC.PoliceInquery.props
 D:\Projects\ETC\ETC.PoliceInquery\ETC.PoliceInquery\obj\Debug\net6.0\staticwebassets.pack.json
-D:\Projects\ETC\ETC.PoliceInquery\ETC.PoliceInquery\obj\Debug\net6.0\staticwebassets.build.json
-D:\Projects\ETC\ETC.PoliceInquery\ETC.PoliceInquery\obj\Debug\net6.0\staticwebassets.development.json
 D:\Projects\ETC\ETC.PoliceInquery\ETC.PoliceInquery\obj\Debug\net6.0\scopedcss\bundle\ETC.PoliceInquery.styles.css
 D:\Projects\ETC\ETC.PoliceInquery\ETC.PoliceInquery\obj\Debug\net6.0\ETC.PoliceInquery.csproj.CopyComplete
 D:\Projects\ETC\ETC.PoliceInquery\ETC.PoliceInquery\obj\Debug\net6.0\ETC.PoliceInquery.dll

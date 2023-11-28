@@ -1,4 +1,4 @@
-﻿namespace ETC.PoliceInquery.DTOs.Request
+﻿namespace ETC.PoliceInquery.Models.DTOs.Request
 {
     public class CheckBarcodePlateRequestDto : BaseRequestDto
     {

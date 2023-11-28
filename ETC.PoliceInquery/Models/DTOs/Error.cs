@@ -1,4 +1,4 @@
-﻿namespace ETC.PoliceInquery.DTOs
+﻿namespace ETC.PoliceInquery.Models.DTOs
 {
     public class Error
     {

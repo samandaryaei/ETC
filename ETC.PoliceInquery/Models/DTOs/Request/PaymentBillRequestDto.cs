@@ -1,8 +1,7 @@
 ﻿using ETC.PoliceInquery.Shared;
 using System.ComponentModel.DataAnnotations;
-using static System.Net.Mime.MediaTypeNames;
 
-namespace ETC.PoliceInquery.DTOs.Request
+namespace ETC.PoliceInquery.Models.DTOs.Request
 {
     public class PaymentBillRequestDto : BaseRequestDto
     {
@@ -20,7 +19,7 @@ namespace ETC.PoliceInquery.DTOs.Request
         public override string SignData
         {
             get => string.IsNullOrEmpty(SignData) ?
-               base.GenSign($"{TrackingCode}" +
+               GenSign($"{TrackingCode}" +
                 $"{BillNumber}" +
                 $"{PaymentPrice}" +
                 $"{PaymentDateTime}" +

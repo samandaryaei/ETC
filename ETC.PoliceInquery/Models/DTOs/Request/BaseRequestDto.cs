@@ -1,22 +1,21 @@
-﻿using System.Security.Cryptography;
+﻿using ETC.PoliceInquery.Shared;
+using System.Security.Cryptography;
 using System.Text;
 
-namespace ETC.PoliceInquery.DTOs.Request
+namespace ETC.PoliceInquery.Models.DTOs.Request
 {
     public class BaseRequestDto
     {
-        [NonSerialized]
-        private readonly byte[] _salt = new byte[32]; //TODO مقدار را باید از پلیس گرفت
         public virtual string SignData { get; set; }
         protected string GenSign(string param)
         {
             using (SHA512 sha512 = SHA512.Create())
             {
                 byte[] paramBytes = Encoding.UTF8.GetBytes(param);
-                byte[] saltedParamBytes = new byte[paramBytes.Length + _salt.Length];
+                byte[] saltedParamBytes = new byte[paramBytes.Length + ApplicationVariables._salt.Length];
 
-                Buffer.BlockCopy(_salt, 0, saltedParamBytes, 0, _salt.Length);
-                Buffer.BlockCopy(paramBytes, 0, saltedParamBytes, _salt.Length, paramBytes.Length);
+                Buffer.BlockCopy(ApplicationVariables._salt, 0, saltedParamBytes, 0, ApplicationVariables._salt.Length);
+                Buffer.BlockCopy(paramBytes, 0, saltedParamBytes, ApplicationVariables._salt.Length, paramBytes.Length);
 
                 byte[] hashBytes = sha512.ComputeHash(saltedParamBytes);
 
