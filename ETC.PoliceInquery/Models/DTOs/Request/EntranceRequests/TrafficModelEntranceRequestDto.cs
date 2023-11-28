@@ -1,8 +1,8 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace ETC.PoliceInquery.Models.DTOs.Request
+namespace ETC.PoliceInquery.Models.DTOs.Request.EntranceRequests
 {
-    public class TrafficModelRequestDto : BaseRequestDto
+    public class TrafficModelEntranceRequestDto
     {
         [Required]
         public string TrafficDate { get; set; }

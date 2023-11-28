@@ -1,9 +1,9 @@
 ﻿using ETC.PoliceInquery.Shared;
 using System.ComponentModel.DataAnnotations;
 
-namespace ETC.PoliceInquery.Models.DTOs.Request
+namespace ETC.PoliceInquery.Models.DTOs.Request.EntranceRequests
 {
-    public class PaymentBillRequestDto : BaseRequestDto
+    public class PaymentBillEntranceRequestDto
     {
         [Required]
         public string TrackingCode { get; set; }

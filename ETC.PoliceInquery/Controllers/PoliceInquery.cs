@@ -1,5 +1,8 @@
-﻿using ETC.PoliceInquery.HttpClient;
+﻿using AutoMapper;
+using ETC.PoliceInquery.Authorization;
+using ETC.PoliceInquery.HttpClient;
 using ETC.PoliceInquery.Models.DTOs.Request;
+using ETC.PoliceInquery.Models.DTOs.Request.EntranceRequests;
 using ETC.PoliceInquery.Models.DTOs.Response;
 using ETC.PoliceInquery.Shared;
 using Microsoft.AspNetCore.Mvc;
@@ -7,6 +10,7 @@ using System.Net;
 
 namespace ETC.PoliceInquery.Controllers
 {
+    [Authorize]
     [ApiController]
     [Route("api/[controller]/[action]")]
     public class PoliceInquery : ControllerBase
@@ -15,61 +19,72 @@ namespace ETC.PoliceInquery.Controllers
         private readonly IConfiguration _configuration;
         private readonly IWebHostEnvironment _webHostEnvironment;
         private readonly IHttpClientHelperAsync _httpClientHelperAsync;
+        private readonly IMapper _mapper;
+
         private UrlSettings Urls;
 
         public PoliceInquery(ILogger<PoliceInquery> logger,
                              IConfiguration configuration,
                              IWebHostEnvironment webHostEnvironment,
-                             IHttpClientHelperAsync httpClientHelperAsync)
+                             IHttpClientHelperAsync httpClientHelperAsync,
+                             IMapper mapper)
         {
             _logger = logger;
             _configuration = configuration;
             _webHostEnvironment = webHostEnvironment;
             _httpClientHelperAsync = httpClientHelperAsync;
+            _mapper = mapper;
 
             Urls = _configuration.GetSection("Urls").Get<UrlSettings>();
         }
 
         [HttpPost(Name = "SendTrafficData")]
-        public async Task<IActionResult> SendTrafficData(TrafficModelRequestDto body)
+        public async Task<IActionResult> SendTrafficData(TrafficModelEntranceRequestDto body)
         {
-            return await _postData<TrafficModelRequestDto,TrafficModelResponseDto>(Urls.SendDataUrl, body);
+            var requestBody = _mapper.Map<TrafficModelRequestDto>(body);
+            return await _postData<TrafficModelRequestDto,TrafficModelResponseDto>(Urls.SendDataUrl, requestBody);
         }
 
         [HttpPost(Name = "SendBill")]
-        public async Task<IActionResult> SendBill(BillDataRequestDto body)
+        public async Task<IActionResult> SendBill(BillDataEntranceRequestDto body)
         {
-            return await _postData<BillDataRequestDto,BillDataResponseDto>(Urls.SendBillUrl, body);
+            var requestBody = _mapper.Map<BillDataRequestDto>(body);
+            return await _postData<BillDataRequestDto,BillDataResponseDto>(Urls.SendBillUrl, requestBody);
         }
 
         [HttpPost(Name = "SendPaymentBill")]
-        public async Task<IActionResult> SendPaymentBill(PaymentBillRequestDto body)
+        public async Task<IActionResult> SendPaymentBill(PaymentBillEntranceRequestDto body)
         {
-            return await _postData<PaymentBillRequestDto,PaymentBillResponseDto>(Urls.PaymentBilUrl, body);
+            var requestBody = _mapper.Map<PaymentBillRequestDto>(body);
+            return await _postData<PaymentBillRequestDto,PaymentBillResponseDto>(Urls.PaymentBilUrl, requestBody);
         }
 
         [HttpPost(Name = "SendPic")]
-        public async Task<IActionResult> SendPic(SendPicRequestDto body)
+        public async Task<IActionResult> SendPic(SendPicEntranceRequestDto body)
         {
-            return await _postData<SendPicRequestDto,SendPicResponseDto>(Urls.SendPicUrl, body);
+            var requestBody = _mapper.Map<SendPicRequestDto>(body);
+            return await _postData<SendPicRequestDto,SendPicResponseDto>(Urls.SendPicUrl, requestBody);
         }
 
         [HttpPost(Name = "SendPenalty")]
-        public async Task<IActionResult> SendPenalty(SendPenaltyRequestDto body)
+        public async Task<IActionResult> SendPenalty(SendPenaltyEntranceRequestDto body)
         {
-            return await _postData<SendPenaltyRequestDto,SendPenaltyResponseDto>(Urls.SendPenaltyUrl, body);
+            var requestBody = _mapper.Map<SendPenaltyRequestDto>(body);
+            return await _postData<SendPenaltyRequestDto,SendPenaltyResponseDto>(Urls.SendPenaltyUrl, requestBody);
         }
 
         [HttpPost(Name = "GetTrackingClass")]
-        public async Task<IActionResult> GetTrackingClass(TrackingClassRequestDto body)
+        public async Task<IActionResult> GetTrackingClass(TrackingClassEntranceRequestDto body)
         {
-            return await _postData<TrackingClassRequestDto, TrackingClassResponseDto>(Urls.TrackingClassUrl, body);
+            var requestBody = _mapper.Map<TrackingClassRequestDto>(body);
+            return await _postData<TrackingClassRequestDto, TrackingClassResponseDto>(Urls.TrackingClassUrl, requestBody);
         }
 
         [HttpPost(Name = "CheckBarcodePlate")]
-        public async Task<IActionResult> CheckBarcodePlate(CheckBarcodePlateRequestDto body)
+        public async Task<IActionResult> CheckBarcodePlate(CheckBarcodePlateEntranceRequestDto body)
         {
-            return await _postData<CheckBarcodePlateRequestDto,CheckBarcodePlateResponseDto>(Urls.CheckBarcodePlateUrl, body);
+            var requestBody = _mapper.Map<CheckBarcodePlateRequestDto>(body);
+            return await _postData<CheckBarcodePlateRequestDto,CheckBarcodePlateResponseDto>(Urls.CheckBarcodePlateUrl, requestBody);
         }
 
         #region Test HttpClient

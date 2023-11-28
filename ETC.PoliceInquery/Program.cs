@@ -1,5 +1,6 @@
 ﻿using ETC.PoliceInquery.Authorization;
 using ETC.PoliceInquery.HttpClient;
+using ETC.PoliceInquery.Models;
 using ETC.PoliceInquery.Services;
 using ETC.PoliceInquery.Shared;
 using Microsoft.OpenApi.Models;
@@ -13,6 +14,9 @@ builder.Services.AddSwaggerGen(c =>
 {
     c.SwaggerDoc("v1", new OpenApiInfo { Title = "PoliceInquery", Version = "v1" });
 });
+
+builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
+//builder.Services.AddAutoMapper(typeof(MapperConfig));
 
 builder.Services.AddHttpClient("ETC", client =>
 {

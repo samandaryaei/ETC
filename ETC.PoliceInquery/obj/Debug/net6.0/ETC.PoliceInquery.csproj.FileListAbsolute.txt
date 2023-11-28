@@ -5,6 +5,8 @@ D:\Projects\ETC\ETC.PoliceInquery\ETC.PoliceInquery\bin\Debug\net6.0\ETC.PoliceI
 D:\Projects\ETC\ETC.PoliceInquery\ETC.PoliceInquery\bin\Debug\net6.0\ETC.PoliceInquery.runtimeconfig.json
 D:\Projects\ETC\ETC.PoliceInquery\ETC.PoliceInquery\bin\Debug\net6.0\ETC.PoliceInquery.dll
 D:\Projects\ETC\ETC.PoliceInquery\ETC.PoliceInquery\bin\Debug\net6.0\ETC.PoliceInquery.pdb
+D:\Projects\ETC\ETC.PoliceInquery\ETC.PoliceInquery\bin\Debug\net6.0\AutoMapper.dll
+D:\Projects\ETC\ETC.PoliceInquery\ETC.PoliceInquery\bin\Debug\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
 D:\Projects\ETC\ETC.PoliceInquery\ETC.PoliceInquery\bin\Debug\net6.0\Microsoft.Bcl.AsyncInterfaces.dll
 D:\Projects\ETC\ETC.PoliceInquery\ETC.PoliceInquery\bin\Debug\net6.0\Microsoft.Bcl.TimeProvider.dll
 D:\Projects\ETC\ETC.PoliceInquery\ETC.PoliceInquery\bin\Debug\net6.0\Microsoft.OpenApi.dll

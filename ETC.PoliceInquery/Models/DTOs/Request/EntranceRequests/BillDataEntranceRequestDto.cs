@@ -1,11 +1,11 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace ETC.PoliceInquery.Models.DTOs.Request
+namespace ETC.PoliceInquery.Models.DTOs.Request.EntranceRequests
 {
     /// <summary>
     /// 
     /// </summary>
-    public class BillDataRequestDto : BaseRequestDto
+    public class BillDataEntranceRequestDto
     {
         [Required]
         public string TrackingCode { get; set; }

@@ -1,8 +1,8 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace ETC.PoliceInquery.Models.DTOs.Request
+namespace ETC.PoliceInquery.Models.DTOs.Request.EntranceRequests
 {
-    public class TrackingClassRequestDto : BaseRequestDto
+    public class TrackingClassEntranceRequestDto
     {
         [Required]
         public string TrackingCode { get; set; }
