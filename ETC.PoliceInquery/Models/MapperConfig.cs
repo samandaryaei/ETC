@@ -17,8 +17,10 @@ namespace ETC.PoliceInquery.Models
             CreateMap<CheckBarcodePlateEntranceRequestDto, CheckBarcodePlateRequestDto>()
                 .ForMember(dest => dest.SignData, opt => opt.MapFrom(src => GenSign($"{src.Barcode}{src.PlateNumber}")));
 
+
+            //var t = (short)Enum.Parse(typeof(PayOffStatus),"9");
             CreateMap<PaymentBillEntranceRequestDto, PaymentBillRequestDto>()
-                .ForMember(dest => dest.SignData, opt => opt.MapFrom(src => GenSign($"{src.TrackingCode}{src.BillNumber}{src.PaymentPrice}{src.PaymentDateTime}{(short)Enum.Parse(typeof(PayOffStatus), src.PayoffStatus)}")));
+                .ForMember(dest => dest.SignData, opt => opt.MapFrom(src => GenSign($"{src.TrackingCode}{src.BillNumber}{src.PaymentPrice}{src.PaymentDateTime}{src.PayoffStatus}")));
 
             CreateMap<SendPenaltyEntranceRequestDto, SendPenaltyRequestDto>()
                 .ForMember(dest => dest.SignData, opt => opt.MapFrom(src => GenSign($"{src.BillNumber}{src.TrackingCode}{src.ViolationCode}")));

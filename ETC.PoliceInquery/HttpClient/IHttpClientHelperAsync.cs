@@ -1,6 +1,5 @@
 ﻿using ETC.PoliceInquery.Models.DTOs.Request;
 using ETC.PoliceInquery.Models.DTOs.Response;
-using Microsoft.AspNetCore.Mvc;
 
 namespace ETC.PoliceInquery.HttpClient
 {

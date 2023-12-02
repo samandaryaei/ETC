@@ -1,33 +1,14 @@
 ﻿using ETC.PoliceInquery.Authorization;
-using ETC.PoliceInquery.HttpClient;
-using ETC.PoliceInquery.Models;
-using ETC.PoliceInquery.Services;
-using ETC.PoliceInquery.Shared;
-using Microsoft.OpenApi.Models;
+using ETC.PoliceInquery.ServiceConfigurations;
 
 var builder = WebApplication.CreateBuilder(args);
 
-builder.Services.AddControllers();
-builder.Services.AddEndpointsApiExplorer();
-
-builder.Services.AddSwaggerGen(c =>
-{
-    c.SwaggerDoc("v1", new OpenApiInfo { Title = "PoliceInquery", Version = "v1" });
-});
-
-builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
-//builder.Services.AddAutoMapper(typeof(MapperConfig));
-
-builder.Services.AddHttpClient("ETC", client =>
-{
-    var baseUrl = builder.Configuration.GetSection("Urls").Get<UrlSettings>().BaseUrl;
-    client.BaseAddress = new Uri(baseUrl);
-    client.DefaultRequestHeaders.Add("Accept", "application/json");
-});
-
-builder.Services.AddSingleton<IHttpClientHelperAsync,HttpClientHelperAsync>();
-
-builder.Services.AddScoped<IUserService, UserService>();
+builder.Services.GlobalConfiguration(builder.Configuration);
+builder.Services.RegisterServices(builder.Configuration);
+builder.Services.HttpClientAndPollyConfiguration(builder.Configuration,
+    bool.Parse(builder.Configuration.GetSection("IsPollyEnable").Value));
+builder.Services.AutoMapperConfigurationConfiguration(builder.Configuration);
+builder.Services.SwaggerConfiguration(builder.Configuration);
 
 var app = builder.Build();
 
@@ -54,18 +35,3 @@ app.UseMiddleware<BasicAuthMiddleware>();
 app.MapControllers();
 
 app.Run();
-
-
-
-
-//static IAsyncPolicy<HttpResponseMessage> GetRetryPolicy()
-//{
-//    return HttpPolicyExtensions
-//        .HandleTransientHttpError()
-//        .OrResult(msg => msg.StatusCode == System.Net.HttpStatusCode.NotFound)
-//        .OrResult(msg => msg.StatusCode == System.Net.HttpStatusCode.InternalServerError)
-//        .OrResult(msg => msg.StatusCode == System.Net.HttpStatusCode.ServiceUnavailable)
-//        .OrResult(msg => msg.StatusCode == System.Net.HttpStatusCode.RequestTimeout)
-//        .OrResult(msg => msg.StatusCode == System.Net.HttpStatusCode.GatewayTimeout)
-//        .WaitAndRetryAsync(6, retryAttempt => TimeSpan.FromSeconds(Math.Pow(2, retryAttempt)));
-//}
