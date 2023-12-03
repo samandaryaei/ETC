@@ -6,12 +6,7 @@ using ETC.PoliceInquery.Models.DTOs.Request.EntranceRequests;
 using ETC.PoliceInquery.Models.DTOs.Response;
 using ETC.PoliceInquery.Shared;
 using Microsoft.AspNetCore.Mvc;
-using Newtonsoft.Json;
-using Polly;
-using System.Drawing;
-using System;
 using System.Net;
-using System.Threading;
 
 namespace ETC.PoliceInquery.Controllers
 {
